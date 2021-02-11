@@ -120,6 +120,7 @@ export interface EndGiveawayData {
 }
 export interface DrawGiveawayData {
     winner: string;
+    logoUrl: string;
 }
 export interface EnterGiveawayData {
     username: string;
