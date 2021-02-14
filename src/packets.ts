@@ -176,8 +176,13 @@ export interface EnterGiveawayPacket extends Packet {
   data: EnterGiveawayData;
 }
 
-export interface ImageDropPacket extends Packet {
+export interface ImageDropData {
   type: string;
+}
+
+export interface ImageDropPacket extends Packet {
+  event: MainframeEvent.imageDrop;
+  data: ImageDropData;
 }
 
 export type WebSocketPacket =

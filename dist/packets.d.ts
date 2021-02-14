@@ -143,7 +143,11 @@ export interface EnterGiveawayPacket extends Packet {
     event: MainframeEvent.enterGiveaway;
     data: EnterGiveawayData;
 }
-export interface ImageDropPacket extends Packet {
+export interface ImageDropData {
     type: string;
+}
+export interface ImageDropPacket extends Packet {
+    event: MainframeEvent.imageDrop;
+    data: ImageDropData;
 }
 export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | WeatherPacket | WeatherTrailPacket;
