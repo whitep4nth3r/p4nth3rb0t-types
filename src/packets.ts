@@ -176,6 +176,10 @@ export interface EnterGiveawayPacket extends Packet {
   data: EnterGiveawayData;
 }
 
+export interface ImageDropPacket extends Packet {
+  type: string;
+}
+
 export type WebSocketPacket =
   | CheerPacket
   | SubPacket
@@ -183,6 +187,7 @@ export type WebSocketPacket =
   | FollowPacket
   | DropUserPacket
   | DropEmotePacket
+  | ImageDropPacket
   | SpecialUserJoinPacket
   | TeamMemberJoinPacket
   | YeetUserPacket

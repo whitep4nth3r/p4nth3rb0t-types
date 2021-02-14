@@ -7,7 +7,7 @@ export enum MainframeEvent {
   cheer = "cheer",
   specialUserJoin = "specialuserjoin",
   weatherTrailEvent = "settrailing",
-  teammemberJoin = "teammemberjoin",
+  teamMemberJoin = "teammemberjoin",
   chatMessage = "chatmessage",
   yeetUser = "yeetuser",
   follow = "follow",
@@ -15,4 +15,5 @@ export enum MainframeEvent {
   endGiveaway = "endgiveaway",
   enterGiveaway = "entergiveaway",
   drawGiveaway = "drawgiveaway",
+  imageDrop = "imagedrop",
 }

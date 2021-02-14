@@ -11,7 +11,7 @@ var MainframeEvent;
     MainframeEvent["cheer"] = "cheer";
     MainframeEvent["specialUserJoin"] = "specialuserjoin";
     MainframeEvent["weatherTrailEvent"] = "settrailing";
-    MainframeEvent["teammemberJoin"] = "teammemberjoin";
+    MainframeEvent["teamMemberJoin"] = "teammemberjoin";
     MainframeEvent["chatMessage"] = "chatmessage";
     MainframeEvent["yeetUser"] = "yeetuser";
     MainframeEvent["follow"] = "follow";
@@ -19,5 +19,6 @@ var MainframeEvent;
     MainframeEvent["endGiveaway"] = "endgiveaway";
     MainframeEvent["enterGiveaway"] = "entergiveaway";
     MainframeEvent["drawGiveaway"] = "drawgiveaway";
+    MainframeEvent["imageDrop"] = "imagedrop";
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
 //# sourceMappingURL=mainframe.events.js.map
