@@ -100,6 +100,7 @@ export interface ChatMessageData {
     };
     type: string | undefined;
     id: string | undefined;
+    teamMemberIconUrl: string | undefined;
 }
 export interface ChatMessagePacket extends Packet {
     event: MainframeEvent.chatMessage;
