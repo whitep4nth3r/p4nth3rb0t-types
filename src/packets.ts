@@ -1,4 +1,4 @@
-import {MainframeEvent} from "./enums/mainframe.events";
+import { MainframeEvent } from "./enums/mainframe.events";
 
 export interface Packet {
   event: MainframeEvent;
@@ -16,7 +16,6 @@ export interface CheerPacket extends Packet {
   data: CheerData;
 }
 
-
 export interface DropUserData {
   logoUrl?: string;
 }
@@ -25,7 +24,6 @@ export interface DropEmoteData {
   emoteUrls?: string[];
   dropType?: string;
 }
-
 
 export interface DropUserPacket extends Packet {
   event: MainframeEvent.dropUser;
@@ -88,13 +86,12 @@ export interface WeatherTrailPacket extends Packet {
   data: WeatherTrailData;
 }
 
-
 export interface TeamMemberJoinData {
   logoUrl: string;
 }
 
 export interface TeamMemberJoinPacket extends Packet {
-  event: MainframeEvent.teammemberJoin;
+  event: MainframeEvent.teamMemberJoin;
   data: TeamMemberJoinData;
 }
 
@@ -106,7 +103,6 @@ export interface YeetUserPacket extends Packet {
   event: MainframeEvent.yeetUser;
   data: YeetUserData;
 }
-
 
 export interface ChatMessageData {
   userId: string;
@@ -135,7 +131,6 @@ export interface ChatMessagePacket extends Packet {
   data: ChatMessageData;
 }
 
-
 export interface FollowData {
   followerName: string;
   logoUrl: string;
@@ -147,12 +142,9 @@ export interface FollowPacket extends Packet {
   data: FollowData;
 }
 
+export interface StartGiveawayData {}
 
-export interface StartGiveawayData {
-}
-
-export interface EndGiveawayData {
-}
+export interface EndGiveawayData {}
 
 export interface DrawGiveawayData {
   winner: string;
@@ -164,24 +156,20 @@ export interface EnterGiveawayData {
   logoUrl: string;
 }
 
-
 export interface StartGiveawayPacket extends Packet {
   event: MainframeEvent.startGiveaway;
   data: StartGiveawayData;
 }
-
 
 export interface EndGiveawayPacket extends Packet {
   event: MainframeEvent.endGiveaway;
   data: EndGiveawayData;
 }
 
-
 export interface DrawGiveawayPacket extends Packet {
   event: MainframeEvent.drawGiveaway;
   data: DrawGiveawayData;
 }
-
 
 export interface EnterGiveawayPacket extends Packet {
   event: MainframeEvent.enterGiveaway;
@@ -189,9 +177,19 @@ export interface EnterGiveawayPacket extends Packet {
 }
 
 export type WebSocketPacket =
-  | CheerPacket | SubPacket | RaidPacket | FollowPacket
-  | DropUserPacket | DropEmotePacket
-  | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket
+  | CheerPacket
+  | SubPacket
+  | RaidPacket
+  | FollowPacket
+  | DropUserPacket
+  | DropEmotePacket
+  | SpecialUserJoinPacket
+  | TeamMemberJoinPacket
+  | YeetUserPacket
   | ChatMessagePacket
-  | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket
-  | WeatherPacket | WeatherTrailPacket;
+  | StartGiveawayPacket
+  | EndGiveawayPacket
+  | DrawGiveawayPacket
+  | EnterGiveawayPacket
+  | WeatherPacket
+  | WeatherTrailPacket;
