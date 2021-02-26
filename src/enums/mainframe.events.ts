@@ -16,4 +16,5 @@ export enum MainframeEvent {
   enterGiveaway = "entergiveaway",
   drawGiveaway = "drawgiveaway",
   imageDrop = "imagedrop",
+  moodChange = "moodchange",
 }

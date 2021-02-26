@@ -185,6 +185,15 @@ export interface ImageDropPacket extends Packet {
   data: ImageDropData;
 }
 
+export interface MoodChangeData {
+  mood: string;
+}
+
+export interface MoodChangePacket extends Packet {
+  event: MainframeEvent.moodChange;
+  data: MoodChangeData;
+}
+
 export type WebSocketPacket =
   | CheerPacket
   | SubPacket
@@ -201,5 +210,6 @@ export type WebSocketPacket =
   | EndGiveawayPacket
   | DrawGiveawayPacket
   | EnterGiveawayPacket
+  | MoodChangePacket
   | WeatherPacket
   | WeatherTrailPacket;

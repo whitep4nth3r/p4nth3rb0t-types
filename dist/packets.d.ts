@@ -150,4 +150,11 @@ export interface ImageDropPacket extends Packet {
     event: MainframeEvent.imageDrop;
     data: ImageDropData;
 }
-export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | WeatherPacket | WeatherTrailPacket;
+export interface MoodChangeData {
+    mood: string;
+}
+export interface MoodChangePacket extends Packet {
+    event: MainframeEvent.moodChange;
+    data: MoodChangeData;
+}
+export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | MoodChangePacket | WeatherPacket | WeatherTrailPacket;

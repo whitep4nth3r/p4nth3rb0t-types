@@ -20,5 +20,6 @@ var MainframeEvent;
     MainframeEvent["enterGiveaway"] = "entergiveaway";
     MainframeEvent["drawGiveaway"] = "drawgiveaway";
     MainframeEvent["imageDrop"] = "imagedrop";
+    MainframeEvent["moodChange"] = "moodchange";
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
 //# sourceMappingURL=mainframe.events.js.map
