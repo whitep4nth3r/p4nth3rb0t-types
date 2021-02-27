@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.MainframeEvent = void 0;
+exports.CurrentMoods = exports.MainframeEvent = void 0;
 var MainframeEvent;
 (function (MainframeEvent) {
     MainframeEvent["sub"] = "sub";
@@ -22,4 +22,15 @@ var MainframeEvent;
     MainframeEvent["imageDrop"] = "imagedrop";
     MainframeEvent["moodChange"] = "moodchange";
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
+var CurrentMoods;
+(function (CurrentMoods) {
+    CurrentMoods["Cool"] = "cool";
+    CurrentMoods["Dolla"] = "dolla";
+    CurrentMoods["Fire"] = "fire";
+    CurrentMoods["Heart"] = "heart";
+    CurrentMoods["Majick"] = "majick";
+    CurrentMoods["PewPew"] = "pewpew";
+    CurrentMoods["Sad"] = "sad";
+    CurrentMoods["Star"] = "star";
+})(CurrentMoods = exports.CurrentMoods || (exports.CurrentMoods = {}));
 //# sourceMappingURL=mainframe.events.js.map

@@ -18,3 +18,14 @@ export enum MainframeEvent {
   imageDrop = "imagedrop",
   moodChange = "moodchange",
 }
+
+export enum CurrentMoods {
+  Cool = "cool",
+  Dolla = "dolla",
+  Fire = "fire",
+  Heart = "heart",
+  Majick = "majick",
+  PewPew = "pewpew",
+  Sad = "sad",
+  Star = "star",
+}
