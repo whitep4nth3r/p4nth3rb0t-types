@@ -15,6 +15,7 @@ var MainframeEvent;
     MainframeEvent["chatMessage"] = "chatmessage";
     MainframeEvent["yeetUser"] = "yeetuser";
     MainframeEvent["follow"] = "follow";
+    MainframeEvent["announceGiveaway"] = "announcegiveaway";
     MainframeEvent["startGiveaway"] = "startgiveaway";
     MainframeEvent["endGiveaway"] = "endgiveaway";
     MainframeEvent["enterGiveaway"] = "entergiveaway";

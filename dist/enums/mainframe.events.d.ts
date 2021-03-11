@@ -11,6 +11,7 @@ export declare enum MainframeEvent {
     chatMessage = "chatmessage",
     yeetUser = "yeetuser",
     follow = "follow",
+    announceGiveaway = "announcegiveaway",
     startGiveaway = "startgiveaway",
     endGiveaway = "endgiveaway",
     enterGiveaway = "entergiveaway",

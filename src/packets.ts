@@ -142,6 +142,8 @@ export interface FollowPacket extends Packet {
   data: FollowData;
 }
 
+export interface AnnounceGiveawayData {}
+
 export interface StartGiveawayData {}
 
 export interface EndGiveawayData {}
@@ -154,6 +156,11 @@ export interface DrawGiveawayData {
 export interface EnterGiveawayData {
   username: string;
   logoUrl: string;
+}
+
+export interface AnnounceGiveawayPacket extends Packet {
+  event: MainframeEvent.announceGiveaway;
+  data: AnnounceGiveawayData;
 }
 
 export interface StartGiveawayPacket extends Packet {
@@ -206,6 +213,7 @@ export type WebSocketPacket =
   | TeamMemberJoinPacket
   | YeetUserPacket
   | ChatMessagePacket
+  | AnnounceGiveawayPacket
   | StartGiveawayPacket
   | EndGiveawayPacket
   | DrawGiveawayPacket
