@@ -104,6 +104,10 @@ export interface YeetUserPacket extends Packet {
   data: YeetUserData;
 }
 
+export interface DeletedChatMessageData {
+  messageId: string;
+}
+
 export interface ChatMessageData {
   userId: string;
   username: string;
@@ -124,6 +128,11 @@ export interface ChatMessageData {
   id: string | undefined;
 
   teamMemberIconUrl: string | undefined;
+}
+
+export interface DeletedChatMessagePacket extends Packet {
+  event: MainframeEvent.deleteChatMessage;
+  data: DeletedChatMessageData;
 }
 
 export interface ChatMessagePacket extends Packet {
@@ -213,6 +222,7 @@ export type WebSocketPacket =
   | TeamMemberJoinPacket
   | YeetUserPacket
   | ChatMessagePacket
+  | DeletedChatMessagePacket
   | AnnounceGiveawayPacket
   | StartGiveawayPacket
   | EndGiveawayPacket

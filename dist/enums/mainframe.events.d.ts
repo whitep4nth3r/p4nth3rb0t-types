@@ -8,6 +8,7 @@ export declare enum MainframeEvent {
     specialUserJoin = "specialuserjoin",
     weatherTrailEvent = "settrailing",
     teamMemberJoin = "teammemberjoin",
+    deleteChatMessage = "deletechatmessage",
     chatMessage = "chatmessage",
     yeetUser = "yeetuser",
     follow = "follow",

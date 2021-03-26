@@ -12,6 +12,7 @@ var MainframeEvent;
     MainframeEvent["specialUserJoin"] = "specialuserjoin";
     MainframeEvent["weatherTrailEvent"] = "settrailing";
     MainframeEvent["teamMemberJoin"] = "teammemberjoin";
+    MainframeEvent["deleteChatMessage"] = "deletechatmessage";
     MainframeEvent["chatMessage"] = "chatmessage";
     MainframeEvent["yeetUser"] = "yeetuser";
     MainframeEvent["follow"] = "follow";

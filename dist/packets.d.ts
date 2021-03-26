@@ -82,6 +82,9 @@ export interface YeetUserPacket extends Packet {
     event: MainframeEvent.yeetUser;
     data: YeetUserData;
 }
+export interface DeletedChatMessageData {
+    messageId: string;
+}
 export interface ChatMessageData {
     userId: string;
     username: string;
@@ -101,6 +104,10 @@ export interface ChatMessageData {
     type: string | undefined;
     id: string | undefined;
     teamMemberIconUrl: string | undefined;
+}
+export interface DeletedChatMessagePacket extends Packet {
+    event: MainframeEvent.deleteChatMessage;
+    data: DeletedChatMessageData;
 }
 export interface ChatMessagePacket extends Packet {
     event: MainframeEvent.chatMessage;
@@ -163,4 +170,4 @@ export interface MoodChangePacket extends Packet {
     event: MainframeEvent.moodChange;
     data: MoodChangeData;
 }
-export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | AnnounceGiveawayPacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | MoodChangePacket | WeatherPacket | WeatherTrailPacket;
+export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | DeletedChatMessagePacket | AnnounceGiveawayPacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | MoodChangePacket | WeatherPacket | WeatherTrailPacket;
