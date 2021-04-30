@@ -151,6 +151,13 @@ export interface FollowPacket extends Packet {
   data: FollowData;
 }
 
+export interface MerchData {}
+
+export interface MerchPacket extends Packet {
+  event: MainframeEvent.merch;
+  data: MerchData;
+}
+
 export interface AnnounceGiveawayData {}
 
 export interface StartGiveawayData {}
@@ -228,6 +235,7 @@ export type WebSocketPacket =
   | EndGiveawayPacket
   | DrawGiveawayPacket
   | EnterGiveawayPacket
+  | MerchPacket
   | MoodChangePacket
   | WeatherPacket
   | WeatherTrailPacket;

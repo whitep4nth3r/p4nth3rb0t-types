@@ -122,6 +122,12 @@ export interface FollowPacket extends Packet {
     event: MainframeEvent.follow;
     data: FollowData;
 }
+export interface MerchData {
+}
+export interface MerchPacket extends Packet {
+    event: MainframeEvent.merch;
+    data: MerchData;
+}
 export interface AnnounceGiveawayData {
 }
 export interface StartGiveawayData {
@@ -170,4 +176,4 @@ export interface MoodChangePacket extends Packet {
     event: MainframeEvent.moodChange;
     data: MoodChangeData;
 }
-export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | DeletedChatMessagePacket | AnnounceGiveawayPacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | MoodChangePacket | WeatherPacket | WeatherTrailPacket;
+export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | DeletedChatMessagePacket | AnnounceGiveawayPacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | MerchPacket | MoodChangePacket | WeatherPacket | WeatherTrailPacket;

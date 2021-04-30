@@ -23,6 +23,7 @@ var MainframeEvent;
     MainframeEvent["drawGiveaway"] = "drawgiveaway";
     MainframeEvent["imageDrop"] = "imagedrop";
     MainframeEvent["moodChange"] = "moodchange";
+    MainframeEvent["merch"] = "merch";
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
 var CurrentMoods;
 (function (CurrentMoods) {

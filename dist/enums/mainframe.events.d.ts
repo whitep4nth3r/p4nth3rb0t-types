@@ -18,7 +18,8 @@ export declare enum MainframeEvent {
     enterGiveaway = "entergiveaway",
     drawGiveaway = "drawgiveaway",
     imageDrop = "imagedrop",
-    moodChange = "moodchange"
+    moodChange = "moodchange",
+    merch = "merch"
 }
 export declare enum CurrentMoods {
     Cool = "cool",
