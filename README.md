@@ -4,22 +4,8 @@
 
 This repository provides the types for [my Twitch bot](https://github.com/whitep4nth3r/p4nth3rb0t-mainframe) and [stream overlays](https://github.com/whitep4nth3r/p4nth3rlabs) written in TypeScript.
 
-## Using this package in another repository
-
-This repository can be sourced as a dependency directly from this repository in a package.json file.
-
-When committing an update to this package, take the commit hash from the most up-to-date commit, and append it to the dependency declaration in package.json for p4nth3rb0t-mainframe and p4nth3rlabs.
-
-### Fine the latest commit hash
+## To install
 
 ```bash
-git log -n1
-```
-
-### Append the commit hash to the dependency declaration in package.json
-
-```json
-"dependencies": {
-    "p4nth3rb0t-types": "github:whitep4nth3r/p4nth3rb0t-types#{COMMIT_HASH}",
-}
+npm i @whitep4nth3r/p4nth3rb0t-types
 ```
