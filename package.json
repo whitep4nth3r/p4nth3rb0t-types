@@ -1,7 +1,7 @@
 {
-  "name": "p4nth3rb0t-types",
+  "name": "@whitep4nth3r/p4nth3rb0t-types",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository provides the types for p4nth3rb0t and stream overlays written in TypeScript.",
   "scripts": {
     "test": "jest",
     "start": "node build/src/app.js",
@@ -17,7 +17,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
@@ -30,5 +29,13 @@
     "ts-jest": "^26.4.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitep4nth3r/p4nth3rb0t-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whitep4nth3r/p4nth3rb0t-types/issues"
+  },
+  "homepage": "https://github.com/whitep4nth3r/p4nth3rb0t-types#readme"
 }
