@@ -31,4 +31,5 @@ export enum CurrentMoods {
   PewPew = "pewpew",
   Sad = "sad",
   Star = "star",
+  Troll = "troll",
 }

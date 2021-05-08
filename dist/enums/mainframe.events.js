@@ -35,5 +35,6 @@ var CurrentMoods;
     CurrentMoods["PewPew"] = "pewpew";
     CurrentMoods["Sad"] = "sad";
     CurrentMoods["Star"] = "star";
+    CurrentMoods["Troll"] = "troll";
 })(CurrentMoods = exports.CurrentMoods || (exports.CurrentMoods = {}));
 //# sourceMappingURL=mainframe.events.js.map
