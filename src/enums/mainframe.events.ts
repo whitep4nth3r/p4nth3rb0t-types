@@ -23,13 +23,16 @@ export enum MainframeEvent {
 }
 
 export enum CurrentMoods {
+  Coffee ="coffee",
   Cool = "cool",
   Dolla = "dolla",
   Fire = "fire",
   Heart = "heart",
   Majick = "majick",
   PewPew = "pewpew",
+  Rap = "rap",
   Sad = "sad",
   Star = "star",
+  Tattoo = "tattoo",
   Troll = "troll",
 }

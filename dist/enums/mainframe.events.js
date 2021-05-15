@@ -27,14 +27,17 @@ var MainframeEvent;
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
 var CurrentMoods;
 (function (CurrentMoods) {
+    CurrentMoods["Coffee"] = "coffee";
     CurrentMoods["Cool"] = "cool";
     CurrentMoods["Dolla"] = "dolla";
     CurrentMoods["Fire"] = "fire";
     CurrentMoods["Heart"] = "heart";
     CurrentMoods["Majick"] = "majick";
     CurrentMoods["PewPew"] = "pewpew";
+    CurrentMoods["Rap"] = "rap";
     CurrentMoods["Sad"] = "sad";
     CurrentMoods["Star"] = "star";
+    CurrentMoods["Tattoo"] = "tattoo";
     CurrentMoods["Troll"] = "troll";
 })(CurrentMoods = exports.CurrentMoods || (exports.CurrentMoods = {}));
 //# sourceMappingURL=mainframe.events.js.map

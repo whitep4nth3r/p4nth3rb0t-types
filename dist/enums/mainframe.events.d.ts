@@ -22,13 +22,16 @@ export declare enum MainframeEvent {
     merch = "merch"
 }
 export declare enum CurrentMoods {
+    Coffee = "coffee",
     Cool = "cool",
     Dolla = "dolla",
     Fire = "fire",
     Heart = "heart",
     Majick = "majick",
     PewPew = "pewpew",
+    Rap = "rap",
     Sad = "sad",
     Star = "star",
+    Tattoo = "tattoo",
     Troll = "troll"
 }
