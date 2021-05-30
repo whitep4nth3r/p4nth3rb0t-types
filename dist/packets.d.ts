@@ -176,4 +176,17 @@ export interface MoodChangePacket extends Packet {
     event: MainframeEvent.moodChange;
     data: MoodChangeData;
 }
-export declare type WebSocketPacket = CheerPacket | SubPacket | RaidPacket | FollowPacket | DropUserPacket | DropEmotePacket | ImageDropPacket | SpecialUserJoinPacket | TeamMemberJoinPacket | YeetUserPacket | ChatMessagePacket | DeletedChatMessagePacket | AnnounceGiveawayPacket | StartGiveawayPacket | EndGiveawayPacket | DrawGiveawayPacket | EnterGiveawayPacket | MerchPacket | MoodChangePacket | WeatherPacket | WeatherTrailPacket;
+export interface ShoutOutData {
+    lastStream: {
+        thumbnail: string;
+        title: string;
+        category: string;
+    };
+    logoUrl: string;
+    username: string;
+}
+export interface ShoutOutPacket extends Packet {
+    event: MainframeEvent.shoutOut;
+    data: ShoutOutData;
+}
+export declare type WebSocketPacket = AnnounceGiveawayPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | ImageDropPacket | MerchPacket | MoodChangePacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;
