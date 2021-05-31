@@ -22,6 +22,7 @@ var MainframeEvent;
     MainframeEvent["startGiveaway"] = "startgiveaway";
     MainframeEvent["sub"] = "sub";
     MainframeEvent["teamMemberJoin"] = "teammemberjoin";
+    MainframeEvent["timer"] = "timer";
     MainframeEvent["weather"] = "weather";
     MainframeEvent["weatherTrailEvent"] = "settrailing";
     MainframeEvent["yeetUser"] = "yeetuser";

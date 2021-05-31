@@ -188,4 +188,12 @@ export interface ShoutOutPacket extends Packet {
     event: MainframeEvent.shoutOut;
     data: ShoutOutData;
 }
-export declare type WebSocketPacket = AnnounceGiveawayPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | ImageDropPacket | MerchPacket | MoodChangePacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;
+export interface TimerData {
+    minutes: number;
+    description: string;
+}
+export interface TimerPacket extends Packet {
+    event: MainframeEvent.timer;
+    data: TimerData;
+}
+export declare type WebSocketPacket = AnnounceGiveawayPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | ImageDropPacket | MerchPacket | MoodChangePacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;

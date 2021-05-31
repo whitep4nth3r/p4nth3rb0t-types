@@ -231,6 +231,16 @@ export interface ShoutOutPacket extends Packet {
   data: ShoutOutData;
 }
 
+export interface TimerData {
+  minutes: number;
+  description: string;
+}
+
+export interface TimerPacket extends Packet {
+  event: MainframeEvent.timer;
+  data: TimerData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | ChatMessagePacket
@@ -251,6 +261,7 @@ export type WebSocketPacket =
   | StartGiveawayPacket
   | SubPacket
   | TeamMemberJoinPacket
+  | TimerPacket
   | WeatherPacket
   | WeatherTrailPacket
   | YeetUserPacket;
