@@ -177,7 +177,10 @@ export interface MoodChangePacket extends Packet {
     data: MoodChangeData;
 }
 export interface ShoutOutData {
-    lastStreamTitle: string;
+    lastStream: {
+        title: string;
+        category: string;
+    };
     logoUrl: string;
     username: string;
 }
