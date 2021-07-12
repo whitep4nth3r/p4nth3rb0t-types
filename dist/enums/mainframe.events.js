@@ -4,6 +4,7 @@ exports.CurrentMoods = exports.MainframeEvent = void 0;
 var MainframeEvent;
 (function (MainframeEvent) {
     MainframeEvent["announceGiveaway"] = "announcegiveaway";
+    MainframeEvent["banUser"] = "banuser";
     MainframeEvent["chatMessage"] = "chatmessage";
     MainframeEvent["cheer"] = "cheer";
     MainframeEvent["deleteChatMessage"] = "deletechatmessage";

@@ -241,8 +241,18 @@ export interface TimerPacket extends Packet {
   data: TimerData;
 }
 
+export interface BanUserData {
+  userId: string;
+}
+
+export interface BanUserPacket extends Packet {
+  event: MainframeEvent.banUser;
+  data: BanUserData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
+  | BanUserPacket
   | ChatMessagePacket
   | CheerPacket
   | DeletedChatMessagePacket
