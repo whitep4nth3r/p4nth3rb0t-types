@@ -203,4 +203,11 @@ export interface BanUserPacket extends Packet {
     event: MainframeEvent.banUser;
     data: BanUserData;
 }
-export declare type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | ImageDropPacket | MerchPacket | MoodChangePacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;
+export interface TimeoutUserData {
+    userId: string;
+}
+export interface TimeoutUserPacket extends Packet {
+    event: MainframeEvent.timeoutUser;
+    data: TimeoutUserData;
+}
+export declare type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | ImageDropPacket | MerchPacket | MoodChangePacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;

@@ -24,6 +24,7 @@ var MainframeEvent;
     MainframeEvent["sub"] = "sub";
     MainframeEvent["teamMemberJoin"] = "teammemberjoin";
     MainframeEvent["timer"] = "timer";
+    MainframeEvent["timeoutUser"] = "timoutuser";
     MainframeEvent["weather"] = "weather";
     MainframeEvent["weatherTrailEvent"] = "settrailing";
     MainframeEvent["yeetUser"] = "yeetuser";

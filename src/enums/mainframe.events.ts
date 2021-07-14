@@ -20,6 +20,7 @@ export enum MainframeEvent {
   sub = "sub",
   teamMemberJoin = "teammemberjoin",
   timer = "timer",
+  timeoutUser = "timeoutuser",
   weather = "weather",
   weatherTrailEvent = "settrailing",
   yeetUser = "yeetuser",

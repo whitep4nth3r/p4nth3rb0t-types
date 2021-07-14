@@ -250,6 +250,15 @@ export interface BanUserPacket extends Packet {
   data: BanUserData;
 }
 
+export interface TimeoutUserData {
+  userId: string;
+}
+
+export interface TimeoutUserPacket extends Packet {
+  event: MainframeEvent.timeoutUser;
+  data: TimeoutUserData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -272,6 +281,7 @@ export type WebSocketPacket =
   | SubPacket
   | TeamMemberJoinPacket
   | TimerPacket
+  | TimeoutUserPacket
   | WeatherPacket
   | WeatherTrailPacket
   | YeetUserPacket;
