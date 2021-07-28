@@ -13,6 +13,7 @@ export enum MainframeEvent {
   imageDrop = "imagedrop",
   merch = "merch",
   moodChange = "moodchange",
+  numeronym = "numeronym",
   raid = "raid",
   shoutOut = "shoutout",
   specialUserJoin = "specialuserjoin",

@@ -13,6 +13,7 @@ export declare enum MainframeEvent {
     imageDrop = "imagedrop",
     merch = "merch",
     moodChange = "moodchange",
+    numeronym = "numeronym",
     raid = "raid",
     shoutOut = "shoutout",
     specialUserJoin = "specialuserjoin",
@@ -20,7 +21,7 @@ export declare enum MainframeEvent {
     sub = "sub",
     teamMemberJoin = "teammemberjoin",
     timer = "timer",
-    timeoutUser = "timoutuser",
+    timeoutUser = "timeoutuser",
     weather = "weather",
     weatherTrailEvent = "settrailing",
     yeetUser = "yeetuser"

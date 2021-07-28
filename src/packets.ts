@@ -259,6 +259,13 @@ export interface TimeoutUserPacket extends Packet {
   data: TimeoutUserData;
 }
 
+export interface NumeronymData {}
+
+export interface NumeronymPacket extends Packet {
+  event: MainframeEvent.numeronym;
+  data: NumeronymData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -274,6 +281,7 @@ export type WebSocketPacket =
   | ImageDropPacket
   | MerchPacket
   | MoodChangePacket
+  | NumeronymPacket
   | RaidPacket
   | ShoutOutPacket
   | SpecialUserJoinPacket
