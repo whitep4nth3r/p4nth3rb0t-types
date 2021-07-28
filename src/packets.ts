@@ -259,7 +259,9 @@ export interface TimeoutUserPacket extends Packet {
   data: TimeoutUserData;
 }
 
-export interface NumeronymData {}
+export interface NumeronymData {
+  isActive: boolean;
+}
 
 export interface NumeronymPacket extends Packet {
   event: MainframeEvent.numeronym;
