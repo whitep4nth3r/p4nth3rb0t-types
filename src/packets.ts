@@ -268,9 +268,19 @@ export interface NumeronymPacket extends Packet {
   data: NumeronymData;
 }
 
+export interface BackseatData {
+  imageUrl: string;
+}
+
+export interface BackseatPacket extends Packet {
+  event: MainframeEvent.backseat;
+  data: BackseatData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
+  | BackseatPacket
   | ChatMessagePacket
   | CheerPacket
   | DeletedChatMessagePacket
