@@ -94,6 +94,7 @@ export interface ChatMessageData {
     logoUrl: string;
     isMod: boolean;
     isVip: boolean;
+    isPartner: boolean;
     isSubscriber: boolean;
     isBroadcaster: boolean;
     isTeamMember: boolean;
