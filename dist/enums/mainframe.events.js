@@ -38,6 +38,7 @@ var CurrentMoods;
     CurrentMoods["Dolla"] = "dolla";
     CurrentMoods["Fire"] = "fire";
     CurrentMoods["Heart"] = "heart";
+    CurrentMoods["Hype"] = "hype";
     CurrentMoods["Majick"] = "majick";
     CurrentMoods["PewPew"] = "pewpew";
     CurrentMoods["Rap"] = "rap";
