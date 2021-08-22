@@ -34,6 +34,7 @@ export enum CurrentMoods {
   Dolla = "dolla",
   Fire = "fire",
   Heart = "heart",
+  Hype = "hype",
   Majick = "majick",
   PewPew = "pewpew",
   Rap = "rap",
