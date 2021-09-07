@@ -224,4 +224,10 @@ export interface BackseatPacket extends Packet {
     event: MainframeEvent.backseat;
     data: BackseatData;
 }
-export declare type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;
+export interface FreezeData {
+}
+export interface FreezePacket extends Packet {
+    event: MainframeEvent.freeze;
+    data: FreezeData;
+}
+export declare type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;

@@ -277,6 +277,13 @@ export interface BackseatPacket extends Packet {
   data: BackseatData;
 }
 
+export interface FreezeData {}
+
+export interface FreezePacket extends Packet {
+  event: MainframeEvent.freeze;
+  data: FreezeData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -290,6 +297,7 @@ export type WebSocketPacket =
   | EndGiveawayPacket
   | EnterGiveawayPacket
   | FollowPacket
+  | FreezePacket
   | ImageDropPacket
   | MerchPacket
   | MoodChangePacket
