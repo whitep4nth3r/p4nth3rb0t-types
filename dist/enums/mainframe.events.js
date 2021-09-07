@@ -15,6 +15,7 @@ var MainframeEvent;
     MainframeEvent["endGiveaway"] = "endgiveaway";
     MainframeEvent["enterGiveaway"] = "entergiveaway";
     MainframeEvent["follow"] = "follow";
+    MainframeEvent["freeze"] = "freeze";
     MainframeEvent["imageDrop"] = "imagedrop";
     MainframeEvent["merch"] = "merch";
     MainframeEvent["moodChange"] = "moodchange";

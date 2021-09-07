@@ -11,6 +11,7 @@ export enum MainframeEvent {
   endGiveaway = "endgiveaway",
   enterGiveaway = "entergiveaway",
   follow = "follow",
+  freeze = "freeze",
   imageDrop = "imagedrop",
   merch = "merch",
   moodChange = "moodchange",
