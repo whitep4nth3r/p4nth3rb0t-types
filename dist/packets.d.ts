@@ -230,7 +230,7 @@ export interface FreezePacket extends Packet {
     event: MainframeEvent.freeze;
     data: FreezeData;
 }
-interface TeamMemberForOverlay {
+export interface TeamMemberForOverlay {
     displayName: string;
     logoUrl: string;
 }
@@ -242,4 +242,3 @@ export interface TheClawPacket extends Packet {
     data: TheClawData;
 }
 export declare type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | TheClawPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;
-export {};
