@@ -284,7 +284,7 @@ export interface FreezePacket extends Packet {
   data: FreezeData;
 }
 
-interface TeamMemberForOverlay {
+export interface TeamMemberForOverlay {
   displayName: string;
   logoUrl: string;
 }
