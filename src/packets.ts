@@ -284,6 +284,20 @@ export interface FreezePacket extends Packet {
   data: FreezeData;
 }
 
+export interface TheClawData {
+  teamMembers: [
+    {
+      displayName: string;
+      logoUrl: string;
+    },
+  ];
+}
+
+export interface TheClawPacket extends Packet {
+  event: MainframeEvent.theClaw;
+  data: TheClawData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -310,6 +324,7 @@ export type WebSocketPacket =
   | TeamMemberJoinPacket
   | TimerPacket
   | TimeoutUserPacket
+  | TheClawPacket
   | WeatherPacket
   | WeatherTrailPacket
   | YeetUserPacket;
