@@ -284,13 +284,13 @@ export interface FreezePacket extends Packet {
   data: FreezeData;
 }
 
+interface TeamMemberForOverlay {
+  displayName: string;
+  logoUrl: string;
+}
+
 export interface TheClawData {
-  teamMembers: [
-    {
-      displayName: string;
-      logoUrl: string;
-    },
-  ];
+  teamMembers: TeamMemberForOverlay[];
 }
 
 export interface TheClawPacket extends Packet {
