@@ -221,6 +221,7 @@ export interface ShoutOutData {
   lastStream: {
     title: string;
     category: string;
+    date: string
   };
   logoUrl: string;
   username: string;
