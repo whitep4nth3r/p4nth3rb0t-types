@@ -24,6 +24,7 @@ var MainframeEvent;
     MainframeEvent["shoutOut"] = "shoutout";
     MainframeEvent["specialUserJoin"] = "specialuserjoin";
     MainframeEvent["startGiveaway"] = "startgiveaway";
+    MainframeEvent["special"] = "special";
     MainframeEvent["sub"] = "sub";
     MainframeEvent["teamMemberJoin"] = "teammemberjoin";
     MainframeEvent["timer"] = "timer";

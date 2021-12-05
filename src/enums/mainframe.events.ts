@@ -20,6 +20,7 @@ export enum MainframeEvent {
   shoutOut = "shoutout",
   specialUserJoin = "specialuserjoin",
   startGiveaway = "startgiveaway",
+  special = "special",
   sub = "sub",
   teamMemberJoin = "teammemberjoin",
   timer = "timer",

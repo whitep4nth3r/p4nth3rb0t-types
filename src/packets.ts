@@ -298,6 +298,11 @@ export interface TheClawPacket extends Packet {
   data: TheClawData;
 }
 
+export interface SpecialPacket extends Packet {
+  event: MainframeEvent.special;
+  data: any;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -320,6 +325,7 @@ export type WebSocketPacket =
   | ShoutOutPacket
   | SpecialUserJoinPacket
   | StartGiveawayPacket
+  | SpecialPacket
   | SubPacket
   | TeamMemberJoinPacket
   | TimerPacket
