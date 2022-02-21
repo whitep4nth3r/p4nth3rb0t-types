@@ -41,6 +41,7 @@ export declare enum CurrentMoods {
     PewPew = "pewpew",
     Rap = "rap",
     Sad = "sad",
+    Scam = "scam",
     Star = "star",
     Tattoo = "tattoo",
     Troll = "troll"

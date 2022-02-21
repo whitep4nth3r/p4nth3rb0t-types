@@ -46,6 +46,7 @@ var CurrentMoods;
     CurrentMoods["PewPew"] = "pewpew";
     CurrentMoods["Rap"] = "rap";
     CurrentMoods["Sad"] = "sad";
+    CurrentMoods["Scam"] = "scam";
     CurrentMoods["Star"] = "star";
     CurrentMoods["Tattoo"] = "tattoo";
     CurrentMoods["Troll"] = "troll";
