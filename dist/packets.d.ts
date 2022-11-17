@@ -104,6 +104,7 @@ export interface ChatMessageData {
     type: string | undefined;
     id: string | undefined;
     teamMemberIconUrl: string | undefined;
+    isHighlighted: boolean;
 }
 export interface DeletedChatMessagePacket extends Packet {
     event: MainframeEvent.deleteChatMessage;
