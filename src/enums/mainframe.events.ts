@@ -16,6 +16,7 @@ export enum MainframeEvent {
   merch = "merch",
   moodChange = "moodchange",
   numeronym = "numeronym",
+  outgoingraid = "outgoingraid",
   raid = "raid",
   shoutOut = "shoutout",
   specialUserJoin = "specialuserjoin",

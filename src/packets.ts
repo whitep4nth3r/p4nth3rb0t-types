@@ -5,6 +5,11 @@ export interface Packet {
   id: string;
 }
 
+export interface OutgoingRaidData {
+  logoUrl: string;
+  username: string;
+}
+
 export interface CheerData {
   bitCount: string;
   cheererName: string;
@@ -53,6 +58,11 @@ export interface RaidData {
 export interface RaidPacket extends Packet {
   event: MainframeEvent.raid;
   data: RaidData;
+}
+
+export interface OutgoingRaidPacket extends Packet {
+  event: MainframeEvent.outgoingraid;
+  data: OutgoingRaidData;
 }
 
 export interface SubData {
@@ -321,6 +331,7 @@ export type WebSocketPacket =
   | MerchPacket
   | MoodChangePacket
   | NumeronymPacket
+  | OutgoingRaidPacket
   | RaidPacket
   | ShoutOutPacket
   | SpecialUserJoinPacket

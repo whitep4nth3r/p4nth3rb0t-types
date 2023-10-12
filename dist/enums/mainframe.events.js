@@ -20,6 +20,7 @@ var MainframeEvent;
     MainframeEvent["merch"] = "merch";
     MainframeEvent["moodChange"] = "moodchange";
     MainframeEvent["numeronym"] = "numeronym";
+    MainframeEvent["outgoingraid"] = "outgoingraid";
     MainframeEvent["raid"] = "raid";
     MainframeEvent["shoutOut"] = "shoutout";
     MainframeEvent["specialUserJoin"] = "specialuserjoin";
