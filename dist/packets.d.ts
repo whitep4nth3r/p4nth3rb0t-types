@@ -225,6 +225,7 @@ export interface NumeronymData {
 export interface FirstData {
     username: string;
     logoUrl: string;
+    message: string;
 }
 export interface NumeronymPacket extends Packet {
     event: MainframeEvent.numeronym;
