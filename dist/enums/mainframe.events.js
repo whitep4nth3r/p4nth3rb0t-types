@@ -14,6 +14,7 @@ var MainframeEvent;
     MainframeEvent["dropUser"] = "dropuser";
     MainframeEvent["endGiveaway"] = "endgiveaway";
     MainframeEvent["enterGiveaway"] = "entergiveaway";
+    MainframeEvent["first"] = "first";
     MainframeEvent["follow"] = "follow";
     MainframeEvent["freeze"] = "freeze";
     MainframeEvent["imageDrop"] = "imagedrop";

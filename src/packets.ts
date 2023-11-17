@@ -273,9 +273,19 @@ export interface NumeronymData {
   isActive: boolean;
 }
 
+export interface FirstData {
+  username: string;
+  logoUrl: string;
+}
+
 export interface NumeronymPacket extends Packet {
   event: MainframeEvent.numeronym;
   data: NumeronymData;
+}
+
+export interface FirstPacket extends Packet {
+  event: MainframeEvent.first;
+  data: FirstData;
 }
 
 export interface BackseatData {
@@ -325,6 +335,7 @@ export type WebSocketPacket =
   | DropUserPacket
   | EndGiveawayPacket
   | EnterGiveawayPacket
+  | FirstPacket
   | FollowPacket
   | FreezePacket
   | ImageDropPacket

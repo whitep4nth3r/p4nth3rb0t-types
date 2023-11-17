@@ -222,9 +222,17 @@ export interface TimeoutUserPacket extends Packet {
 export interface NumeronymData {
     isActive: boolean;
 }
+export interface FirstData {
+    username: string;
+    logoUrl: string;
+}
 export interface NumeronymPacket extends Packet {
     event: MainframeEvent.numeronym;
     data: NumeronymData;
+}
+export interface FirstPacket extends Packet {
+    event: MainframeEvent.first;
+    data: FirstData;
 }
 export interface BackseatData {
     imageUrl: string;
@@ -254,4 +262,4 @@ export interface SpecialPacket extends Packet {
     event: MainframeEvent.special;
     data: any;
 }
-export type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | OutgoingRaidPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SpecialPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | TheClawPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;
+export type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FirstPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | OutgoingRaidPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SpecialPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | TheClawPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket;
