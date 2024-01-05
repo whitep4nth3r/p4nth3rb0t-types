@@ -366,6 +366,7 @@ export type WebSocketPacket =
   | TeamMemberJoinPacket
   | TimerPacket
   | TimeoutUserPacket
+  | TimeToTailwindPacket
   | TheClawPacket
   | WeatherPacket
   | WeatherTrailPacket
