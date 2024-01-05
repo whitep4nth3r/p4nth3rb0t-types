@@ -300,6 +300,14 @@ export interface BackseatPacket extends Packet {
 
 export interface FreezeData {}
 
+export interface TimeToTailwindData {
+  time: string;
+  user: {
+    logoUrl: string;
+    name: string;
+  };
+}
+
 export interface FreezePacket extends Packet {
   event: MainframeEvent.freeze;
   data: FreezeData;
@@ -322,6 +330,11 @@ export interface TheClawPacket extends Packet {
 export interface SpecialPacket extends Packet {
   event: MainframeEvent.special;
   data: any;
+}
+
+export interface TimeToTailwindPacket extends Packet {
+  event: MainframeEvent.timeToTailwind;
+  data: TimeToTailwindData;
 }
 
 export type WebSocketPacket =

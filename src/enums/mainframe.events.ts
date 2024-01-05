@@ -25,6 +25,7 @@ export enum MainframeEvent {
   special = "special",
   sub = "sub",
   teamMemberJoin = "teammemberjoin",
+  timeToTailwind = "timetotailwind",
   timer = "timer",
   timeoutUser = "timeoutuser",
   theClaw = "theclaw",
