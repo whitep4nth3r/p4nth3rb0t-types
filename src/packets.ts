@@ -348,6 +348,7 @@ export interface ItemSpawnData {
 export interface ItemSpawnPacket extends Packet {
   event: MainframeEvent.itemSpawn;
   data: ItemSpawnData;
+  type: string;
 }
 
 export interface PlayerMoveData {
@@ -358,6 +359,7 @@ export interface PlayerMoveData {
 export interface PlayerMovePacket extends Packet {
   event: MainframeEvent.playerMove;
   data: PlayerMoveData;
+  type: string;
 }
 
 export interface PlayerClaimData {
@@ -369,6 +371,7 @@ export interface PlayerClaimData {
 export interface PlayerClaimPacket extends Packet {
   event: MainframeEvent.playerClaim;
   data: PlayerClaimData;
+  type: string;
 }
 
 export type WebSocketPacket =
