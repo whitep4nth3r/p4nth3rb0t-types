@@ -32,6 +32,9 @@ export enum MainframeEvent {
   weather = "weather",
   weatherTrailEvent = "settrailing",
   yeetUser = "yeetuser",
+  itemSpawn = "itemspawn",
+  playerMove = "playermove",
+  playerClaim = "playerclaim",
 }
 
 export enum CurrentMoods {

@@ -337,6 +337,40 @@ export interface TimeToTailwindPacket extends Packet {
   data: TimeToTailwindData;
 }
 
+export interface ItemSpawnData {
+  zone: string;
+  item: {
+    rarity: number;
+    name: string;
+  };
+}
+
+export interface ItemSpawnPacket extends Packet {
+  event: MainframeEvent.itemSpawn;
+  data: ItemSpawnData;
+}
+
+export interface PlayerMoveData {
+  username: string;
+  toZone: string;
+}
+
+export interface PlayerMovePacket extends Packet {
+  event: MainframeEvent.playerMove;
+  data: PlayerMoveData;
+}
+
+export interface PlayerClaimData {
+  username: string;
+  zone: string;
+  item: string;
+}
+
+export interface PlayerClaimPacket extends Packet {
+  event: MainframeEvent.playerClaim;
+  data: PlayerClaimData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -370,4 +404,7 @@ export type WebSocketPacket =
   | TheClawPacket
   | WeatherPacket
   | WeatherTrailPacket
-  | YeetUserPacket;
+  | YeetUserPacket
+  | ItemSpawnPacket
+  | PlayerMovePacket
+  | PlayerClaimPacket;

@@ -36,6 +36,9 @@ var MainframeEvent;
     MainframeEvent["weather"] = "weather";
     MainframeEvent["weatherTrailEvent"] = "settrailing";
     MainframeEvent["yeetUser"] = "yeetuser";
+    MainframeEvent["itemSpawn"] = "itemspawn";
+    MainframeEvent["playerMove"] = "playermove";
+    MainframeEvent["playerClaim"] = "playerclaim";
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
 var CurrentMoods;
 (function (CurrentMoods) {
