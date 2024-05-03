@@ -305,4 +305,13 @@ export interface PlayerClaimPacket extends Packet {
     data: PlayerClaimData;
     type: string;
 }
-export type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FirstPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | OutgoingRaidPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SpecialPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | TimeToTailwindPacket | TheClawPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket | ItemSpawnPacket | PlayerMovePacket | PlayerClaimPacket;
+export interface ReleaseUnclaimedData {
+    count: number;
+    zone: string;
+}
+export interface ReleaseUnclaimedPacket extends Packet {
+    event: MainframeEvent.releaseUnclaimed;
+    data: ReleaseUnclaimedData;
+    type: string;
+}
+export type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FirstPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | OutgoingRaidPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SpecialPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | TimeToTailwindPacket | TheClawPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket | ItemSpawnPacket | PlayerMovePacket | PlayerClaimPacket | ReleaseUnclaimedPacket;

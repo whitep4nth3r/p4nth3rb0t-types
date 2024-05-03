@@ -374,6 +374,17 @@ export interface PlayerClaimPacket extends Packet {
   type: string;
 }
 
+export interface ReleaseUnclaimedData {
+  count: number;
+  zone: string;
+}
+
+export interface ReleaseUnclaimedPacket extends Packet {
+  event: MainframeEvent.releaseUnclaimed;
+  data: ReleaseUnclaimedData;
+  type: string;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -410,4 +421,5 @@ export type WebSocketPacket =
   | YeetUserPacket
   | ItemSpawnPacket
   | PlayerMovePacket
-  | PlayerClaimPacket;
+  | PlayerClaimPacket
+  | ReleaseUnclaimedPacket;

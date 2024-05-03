@@ -39,6 +39,7 @@ var MainframeEvent;
     MainframeEvent["itemSpawn"] = "itemspawn";
     MainframeEvent["playerMove"] = "playermove";
     MainframeEvent["playerClaim"] = "playerclaim";
+    MainframeEvent["releaseUnclaimed"] = "releaseunclaimed";
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
 var CurrentMoods;
 (function (CurrentMoods) {

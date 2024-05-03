@@ -35,6 +35,7 @@ export enum MainframeEvent {
   itemSpawn = "itemspawn",
   playerMove = "playermove",
   playerClaim = "playerclaim",
+  releaseUnclaimed = "releaseunclaimed",
 }
 
 export enum CurrentMoods {
