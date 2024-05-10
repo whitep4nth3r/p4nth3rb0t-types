@@ -36,6 +36,9 @@ export enum MainframeEvent {
   playerMove = "playermove",
   playerClaim = "playerclaim",
   releaseUnclaimed = "releaseunclaimed",
+  hypeTrainBegin = "hypetrainbegin",
+  hypeTrainProgress = "hypetrainprogress",
+  hypeTrainEnd = "hypetrainend"
 }
 
 export enum CurrentMoods {

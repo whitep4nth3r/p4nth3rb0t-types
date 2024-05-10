@@ -35,7 +35,10 @@ export declare enum MainframeEvent {
     itemSpawn = "itemspawn",
     playerMove = "playermove",
     playerClaim = "playerclaim",
-    releaseUnclaimed = "releaseunclaimed"
+    releaseUnclaimed = "releaseunclaimed",
+    hypeTrainBegin = "hypetrainbegin",
+    hypeTrainProgress = "hypetrainprogress",
+    hypeTrainEnd = "hypetrainend"
 }
 export declare enum CurrentMoods {
     Coffee = "coffee",

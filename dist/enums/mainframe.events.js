@@ -40,6 +40,9 @@ var MainframeEvent;
     MainframeEvent["playerMove"] = "playermove";
     MainframeEvent["playerClaim"] = "playerclaim";
     MainframeEvent["releaseUnclaimed"] = "releaseunclaimed";
+    MainframeEvent["hypeTrainBegin"] = "hypetrainbegin";
+    MainframeEvent["hypeTrainProgress"] = "hypetrainprogress";
+    MainframeEvent["hypeTrainEnd"] = "hypetrainend";
 })(MainframeEvent = exports.MainframeEvent || (exports.MainframeEvent = {}));
 var CurrentMoods;
 (function (CurrentMoods) {

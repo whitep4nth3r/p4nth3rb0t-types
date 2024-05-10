@@ -314,4 +314,25 @@ export interface ReleaseUnclaimedPacket extends Packet {
     data: ReleaseUnclaimedData;
     type: string;
 }
-export type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FirstPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | OutgoingRaidPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SpecialPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | TimeToTailwindPacket | TheClawPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket | ItemSpawnPacket | PlayerMovePacket | PlayerClaimPacket | ReleaseUnclaimedPacket;
+export interface HypeTrainBeginData {
+    level: number;
+}
+export interface HypeTrainBeginPacket extends Packet {
+    event: MainframeEvent.hypeTrainBegin;
+    data: HypeTrainBeginData;
+}
+export interface HypeTrainProgressData {
+    level: number;
+}
+export interface HypeTrainProgressPacket extends Packet {
+    event: MainframeEvent.hypeTrainProgress;
+    data: HypeTrainProgressData;
+}
+export interface HypeTrainEndData {
+    level: number;
+}
+export interface HypeTrainEndPacket extends Packet {
+    event: MainframeEvent.hypeTrainEnd;
+    data: HypeTrainEndData;
+}
+export type WebSocketPacket = AnnounceGiveawayPacket | BanUserPacket | BackseatPacket | ChatMessagePacket | CheerPacket | DeletedChatMessagePacket | DrawGiveawayPacket | DropEmotePacket | DropUserPacket | EndGiveawayPacket | EnterGiveawayPacket | FirstPacket | FollowPacket | FreezePacket | ImageDropPacket | MerchPacket | MoodChangePacket | NumeronymPacket | OutgoingRaidPacket | RaidPacket | ShoutOutPacket | SpecialUserJoinPacket | StartGiveawayPacket | SpecialPacket | SubPacket | TeamMemberJoinPacket | TimerPacket | TimeoutUserPacket | TimeToTailwindPacket | TheClawPacket | WeatherPacket | WeatherTrailPacket | YeetUserPacket | ItemSpawnPacket | PlayerMovePacket | PlayerClaimPacket | ReleaseUnclaimedPacket | HypeTrainBeginPacket | HypeTrainProgressPacket | HypeTrainEndPacket;

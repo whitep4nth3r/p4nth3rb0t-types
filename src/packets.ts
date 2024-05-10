@@ -385,6 +385,33 @@ export interface ReleaseUnclaimedPacket extends Packet {
   type: string;
 }
 
+export interface HypeTrainBeginData {
+  level: number;
+}
+
+export interface HypeTrainBeginPacket extends Packet {
+  event: MainframeEvent.hypeTrainBegin;
+  data: HypeTrainBeginData;
+}
+
+export interface HypeTrainProgressData {
+  level: number;
+}
+
+export interface HypeTrainProgressPacket extends Packet {
+  event: MainframeEvent.hypeTrainProgress;
+  data: HypeTrainProgressData;
+}
+
+export interface HypeTrainEndData {
+  level: number;
+}
+
+export interface HypeTrainEndPacket extends Packet {
+  event: MainframeEvent.hypeTrainEnd;
+  data: HypeTrainEndData;
+}
+
 export type WebSocketPacket =
   | AnnounceGiveawayPacket
   | BanUserPacket
@@ -422,4 +449,7 @@ export type WebSocketPacket =
   | ItemSpawnPacket
   | PlayerMovePacket
   | PlayerClaimPacket
-  | ReleaseUnclaimedPacket;
+  | ReleaseUnclaimedPacket
+  | HypeTrainBeginPacket
+  | HypeTrainProgressPacket
+  | HypeTrainEndPacket;
