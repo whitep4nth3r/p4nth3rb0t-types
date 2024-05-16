@@ -35,6 +35,7 @@ export declare enum MainframeEvent {
     itemSpawn = "itemspawn",
     playerMove = "playermove",
     playerClaim = "playerclaim",
+    playerDrop = "playerdrop",
     releaseUnclaimed = "releaseunclaimed",
     hypeTrainBegin = "hypetrainbegin",
     hypeTrainProgress = "hypetrainprogress",
