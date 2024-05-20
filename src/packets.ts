@@ -378,6 +378,7 @@ export interface PlayerDropData {
   username: string;
   zone: string;
   item: string;
+  rarity: number;
 }
 
 export interface PlayerDropPacket extends Packet {
