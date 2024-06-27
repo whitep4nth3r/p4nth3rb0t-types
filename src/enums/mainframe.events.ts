@@ -36,10 +36,11 @@ export enum MainframeEvent {
   playerMove = "playermove",
   playerClaim = "playerclaim",
   playerDrop = "playerdrop",
+  playerGift = "playergift",
   releaseUnclaimed = "releaseunclaimed",
   hypeTrainBegin = "hypetrainbegin",
   hypeTrainProgress = "hypetrainprogress",
-  hypeTrainEnd = "hypetrainend"
+  hypeTrainEnd = "hypetrainend",
 }
 
 export enum CurrentMoods {

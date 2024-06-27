@@ -387,6 +387,19 @@ export interface PlayerDropPacket extends Packet {
   type: string;
 }
 
+export interface PlayerGiftData {
+  giverName: string;
+  zone: string;
+  item: string;
+  rarity: number;
+}
+
+export interface PlayerGiftPacket extends Packet {
+  event: MainframeEvent.playerGift;
+  data: PlayerGiftData;
+  type: string;
+}
+
 export interface ReleaseUnclaimedData {
   count: number;
   zone: string;
@@ -463,6 +476,7 @@ export type WebSocketPacket =
   | PlayerMovePacket
   | PlayerClaimPacket
   | PlayerDropPacket
+  | PlayerGiftPacket
   | ReleaseUnclaimedPacket
   | HypeTrainBeginPacket
   | HypeTrainProgressPacket

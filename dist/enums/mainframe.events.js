@@ -40,6 +40,7 @@ var MainframeEvent;
     MainframeEvent["playerMove"] = "playermove";
     MainframeEvent["playerClaim"] = "playerclaim";
     MainframeEvent["playerDrop"] = "playerdrop";
+    MainframeEvent["playerGift"] = "playergift";
     MainframeEvent["releaseUnclaimed"] = "releaseunclaimed";
     MainframeEvent["hypeTrainBegin"] = "hypetrainbegin";
     MainframeEvent["hypeTrainProgress"] = "hypetrainprogress";
