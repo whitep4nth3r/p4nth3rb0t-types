@@ -388,7 +388,8 @@ export interface PlayerDropPacket extends Packet {
 }
 
 export interface PlayerGiftData {
-  giverName: string;
+  giver: string;
+  receiver: string,
   zone: string;
   item: string;
   rarity: number;
