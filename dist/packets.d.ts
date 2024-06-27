@@ -317,7 +317,8 @@ export interface PlayerDropPacket extends Packet {
     type: string;
 }
 export interface PlayerGiftData {
-    giverName: string;
+    giver: string;
+    receiver: string;
     zone: string;
     item: string;
     rarity: number;
