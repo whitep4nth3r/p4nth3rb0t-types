@@ -1,0 +1,6 @@
+.github
+.all-contributorsrc
+.eslintrc.json
+.prettierrc
+jest.config.js
+nodemon.json

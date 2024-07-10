@@ -117,6 +117,7 @@ out
 .idea
 
 build
+dist
 
 testConfig.ts
 

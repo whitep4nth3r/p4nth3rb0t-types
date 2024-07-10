@@ -1,6 +1,6 @@
 {
   "name": "@whitep4nth3r/p4nth3rb0t-types",
-  "version": "1.1.8",
+  "version": "1.2.0",
   "description": "This repository provides the types for p4nth3rb0t and stream overlays written in TypeScript.",
   "scripts": {
     "test": "jest",
