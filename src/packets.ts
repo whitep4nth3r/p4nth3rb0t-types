@@ -362,6 +362,29 @@ export interface PlayerMovePacket extends Packet {
   type: string;
 }
 
+export interface PlayerCookData {
+  username: string;
+  recipe: string;
+  rarity: number;
+}
+
+export interface PlayerCookPacket extends Packet {
+  event: MainframeEvent.playerCook;
+  data: PlayerCookData;
+  type: string;
+}
+
+export interface PlayerCookFailData {
+  username: string;
+  ingredientList: string[];
+}
+
+export interface PlayerCookFailPacket extends Packet {
+  event: MainframeEvent.playerCookFail;
+  data: PlayerCookFailData;
+  type: string;
+}
+
 export interface PlayerClaimData {
   username: string;
   zone: string;
@@ -389,7 +412,7 @@ export interface PlayerDropPacket extends Packet {
 
 export interface PlayerGiftData {
   giver: string;
-  receiver: string,
+  receiver: string;
   zone: string;
   item: string;
   rarity: number;
@@ -474,6 +497,8 @@ export type WebSocketPacket =
   | WeatherTrailPacket
   | YeetUserPacket
   | ItemSpawnPacket
+  | PlayerCookPacket
+  | PlayerCookFailPacket
   | PlayerMovePacket
   | PlayerClaimPacket
   | PlayerDropPacket

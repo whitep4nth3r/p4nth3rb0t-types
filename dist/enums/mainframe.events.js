@@ -37,6 +37,8 @@ var MainframeEvent;
     MainframeEvent["weatherTrailEvent"] = "settrailing";
     MainframeEvent["yeetUser"] = "yeetuser";
     MainframeEvent["itemSpawn"] = "itemspawn";
+    MainframeEvent["playerCook"] = "playercook";
+    MainframeEvent["playerCookFail"] = "playercookfail";
     MainframeEvent["playerMove"] = "playermove";
     MainframeEvent["playerClaim"] = "playerclaim";
     MainframeEvent["playerDrop"] = "playerdrop";
