@@ -299,6 +299,7 @@ export interface PlayerCookData {
     username: string;
     recipe: string;
     rarity: number;
+    list: string[];
 }
 export interface PlayerCookPacket extends Packet {
     event: MainframeEvent.playerCook;
