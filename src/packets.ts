@@ -366,7 +366,7 @@ export interface PlayerCookData {
   username: string;
   recipe: string;
   rarity: number;
-  list: string[];
+  lost: string[];
 }
 
 export interface PlayerCookPacket extends Packet {
