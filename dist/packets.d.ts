@@ -298,6 +298,7 @@ export interface PlayerMovePacket extends Packet {
 export interface PlayerScannedData {
     zone: string;
     count: number;
+    username: string;
 }
 export interface PlayerScannedPacket extends Packet {
     event: MainframeEvent.playerScanned;
