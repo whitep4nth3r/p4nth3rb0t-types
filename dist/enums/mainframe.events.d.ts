@@ -33,6 +33,7 @@ export declare enum MainframeEvent {
     weatherTrailEvent = "settrailing",
     yeetUser = "yeetuser",
     itemSpawn = "itemspawn",
+    playerScanned = "playerscanned",
     playerCook = "playercook",
     playerCookFail = "playercookfail",
     playerMove = "playermove",
