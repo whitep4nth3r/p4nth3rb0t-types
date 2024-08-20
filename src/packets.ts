@@ -362,6 +362,18 @@ export interface PlayerMovePacket extends Packet {
   type: string;
 }
 
+export interface PlayerScannedData {
+  zone: string;
+  count: number;
+  username: string;
+}
+
+export interface PlayerScannedPacket extends Packet {
+  event: MainframeEvent.playerScanned;
+  data: PlayerScannedData;
+  type: string;
+}
+
 export interface PlayerCookData {
   username: string;
   recipe: string;
@@ -498,6 +510,7 @@ export type WebSocketPacket =
   | WeatherTrailPacket
   | YeetUserPacket
   | ItemSpawnPacket
+  | PlayerScannedPacket
   | PlayerCookPacket
   | PlayerCookFailPacket
   | PlayerMovePacket
