@@ -402,6 +402,7 @@ export interface PlayerClaimData {
   username: string;
   zone: string;
   item: string;
+  rarity: number;
 }
 
 export interface PlayerClaimPacket extends Packet {
